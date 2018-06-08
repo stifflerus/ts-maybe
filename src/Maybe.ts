@@ -25,7 +25,7 @@ export class Maybe<T> {
 
   private value: Just<T> | Nothing;
 
-  private constructor(value: Nothing | Just<T>) {
+  constructor(value: Nothing | Just<T>) {
     this.value = value;
   }
 

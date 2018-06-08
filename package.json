@@ -1,7 +1,7 @@
 {
-  "name": "maybe-ts",
+  "name": "ts-maybe",
   "version": "1.0.0",
-  "description": "Haskell Maybe implemented in TypeScript",
+  "description": "Maybe type implemented in TypeScript",
   "main": "build/src/Maybe.js",
   "author": "Robert Stiffler",
   "license": "GPL3",
