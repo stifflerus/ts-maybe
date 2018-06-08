@@ -7,7 +7,7 @@ export declare class Maybe<T> {
     static catMaybes<T>(list: Array<Maybe<T>>): T[];
     static mapMaybe<T, S>(func: (input: S) => Maybe<T>, list: S[]): T[];
     private value;
-    private constructor();
+    constructor(value: Nothing | Just<T>);
     isJust(): boolean;
     isNothing(): boolean;
     maybe<S>(defaultValue: S, func: (input: T) => S): Maybe<S>;

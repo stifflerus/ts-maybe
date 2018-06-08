@@ -57,4 +57,8 @@ export class Maybe<T> {
     return this.isNothing() ? [] : [this.fromJust()];
   }
 
+  public bind<S>(func: (input: T) => Maybe<S>): Maybe<S> {
+    return this.isJust() ? func(this.fromJust()) : Maybe.Nothing();
+  }
+
 }

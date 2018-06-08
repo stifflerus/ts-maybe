@@ -2,7 +2,7 @@
   "name": "ts-maybe",
   "version": "1.0.0",
   "description": "Maybe type implemented in TypeScript",
-  "main": "build/src/Maybe.js",
+  "main": "build/src/maybe.js",
   "author": "Robert Stiffler",
   "license": "GPL3",
   "devDependencies": {

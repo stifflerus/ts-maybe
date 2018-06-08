@@ -1,6 +1,6 @@
 import * as jsverify from "jsverify";
 import * as _ from "lodash";
-import { Maybe, Nothing } from "../src/Maybe";
+import { Maybe, Nothing } from "../src/maybe";
 
 const arbJustValue = jsverify.suchthat(jsverify.json, (json: any) => json !== undefined && json !== null);
 const arbNothing = jsverify.either(jsverify.constant(undefined), jsverify.constant(null));
