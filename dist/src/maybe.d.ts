@@ -14,4 +14,5 @@ export declare class Maybe<T> {
     fromJust(): T;
     fromMaybe(defaultValue: T): T;
     maybeToList(): T[];
+    bind<S>(func: (input: T) => Maybe<S>): Maybe<S>;
 }

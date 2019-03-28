@@ -42,6 +42,9 @@ var Maybe = /** @class */ (function () {
     Maybe.prototype.maybeToList = function () {
         return this.isNothing() ? [] : [this.fromJust()];
     };
+    Maybe.prototype.bind = function (func) {
+        return this.isJust() ? func(this.fromJust()) : Maybe.Nothing();
+    };
     return Maybe;
 }());
 exports.Maybe = Maybe;
